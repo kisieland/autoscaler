@@ -1717,7 +1717,7 @@ func waitForDeleteToFinish(t *testing.T, deleteFinished <-chan bool) {
 	case <-deleteFinished:
 		return
 	case <-time.After(20 * time.Second):
-		t.Fatalf("Node delete not finished")
+		t.Fatalf("Node delete not finished xd")
 	}
 }
 
